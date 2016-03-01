@@ -1,0 +1,94 @@
+Logo
+	Myriad Pro Regular
+	60px
+	#eeeeee
+	margin-bottom: 48
+	margin-top: 43
+	float: left
+
+menu text: 
+	active #00aeef 
+	#eeeeee
+	16px 
+	Arial Regular
+	mergin-left:12
+	margin-bottom: 48
+	float: right
+
+header-bg: #333333
+header hight: 134px
+
+hgroup
+margon-top: 54px
+margin-bottom: 19px
+
+h1
+#333333
+Myriad Pro Bold
+60 px
+bold
+margon-top: 13px
+margin-bottom: 18px
+float: left
+
+h1&
+
+h2
+Myriad Pro Regular
+50px
+#bbbbbb
+#00bff3
+float: left
+margon-top: 6px
+margin-bottom: 14px
+
+section
+weight: 960 px
+
+delimiter
+border-bottom: 5px dotted #cccccc
+
+div-quote +<b>
+Myriad Pro Regular
+34px
+#555555
+margon-top: 33px
+margin-bottom: 41px
+
+div-article
+margon-top: 43px
+margin-bottom: 48px
+
+article
+bg: 00aeef
+weigth: 284px
+hight: 351px
+padding: 25px 25px 34px 25px
+margin-right: 54px
+margin-right: last child none
+
+article>h4
+40 px
+#ffffff
+Myriad Pro Regular
+padding-bottom: 24px
+border-bottom: 2px dotted #ffffff
+margin-bottom: 24px
+
+Article>p
+Arial Regular
+14px
+#ffffff
+aligne: center
+hight: 136px
+margin-bottom: 32px
+
+button 
+bg: picture
+Myriad Pro Regular
+18px
+#ffffff
+
+section 2
+margin-top: 36px
+margin-bottom: 42px
