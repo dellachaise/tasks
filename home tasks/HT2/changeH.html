@@ -1,0 +1,21 @@
+<html>
+ <head>
+	  <meta charset="utf-8">
+	  <title>Пример веб-страницы</title>
+	   <script src="jquery-2.2.3.min.js"></script>
+	 
+ </head>
+ <body>
+ 	<h1 class="connectWithInput"> kjshdjfh</h1>
+ 	<form>
+ 		 <input class="newText" type="text" name="login" value="example">
+	</form>
+ <script>
+ 	var inputEl = $(".newText");
+ 	$(".connectWithInput").text(inputEl.val());
+ 	inputEl.keydown(function(event) {
+ 		$(".connectWithInput").text(inputEl.val());
+ 	});
+	  	</script>
+ </body>
+</html>

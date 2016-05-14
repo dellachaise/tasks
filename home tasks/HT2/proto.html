@@ -1,0 +1,34 @@
+<html>
+ <head>
+	  <meta charset="utf-8">
+	  <title>Пример веб-страницы</title>
+	 
+ </head>
+ <body>
+ <script>
+ 	var flowers = {
+ 			beauty: true
+ 		},
+ 		in_pot = {
+ 			pot: false
+ 		},
+ 		gerbera = {
+ 			colorful: true
+ 		},
+ 		freesia = {
+ 			smell: true
+ 		};
+
+ 	in_pot.__proto__ = flowers;
+ 	gerbera.__proto__ = in_pot;
+ 	freesia.__proto__ = gerbera;
+
+ 	console.log(freesia.smell);
+ 	console.log(freesia.colorful);
+ 	console.log(freesia.pot);
+ 	console.log(freesia.beauty);
+
+ 	
+</script>
+ </body>
+</html>

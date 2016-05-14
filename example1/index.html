@@ -5,6 +5,16 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script>
+        	var stack = ["January", "February", "March"];
+        	function randomInteger(min, max) {
+				var rand = min + Math.random() * (max + 1 - min);
+				rand = Math.floor(rand);
+				return rand;
+			}
+			alert( randomInteger(0, 11) );
+	
+		</script>
     </head>
     <body>
         <header class="main-header">
@@ -32,7 +42,7 @@
                     businesses looking to make a <b>big impact</b> online. Our services include web design, online marketing campaigns, and search engine optimization.
                 </p>
             </div>
-            <section class="delimiter services">
+            <section class="delimiter services clearfix">
                 <article class="services-item">
                     <h3>web design</h3>
                     <p>We provide web design solutions of the very highest order. We’ll work with you from the start to understand your exact requirements and will  continuosly work with you to ensure that you’re happy with the final site that you purchase.</p>
@@ -49,33 +59,33 @@
                     <button>LEARN MORE >></button>
                 </article>
             </section>
-            <section class="additional-info delimiter">
-                <aside>
+            <section class="delimiter">
+                <aside class="testimonials">
                     <h4>Client Testimonials</h4>
-                    <article>
+                    <article class="clearfix">
                         <img src="img/feedback1.png"/>
                         <p>“Design studios created a beautiful website and were a pleasure to work with during the whole process...”</p>
                         <span class="name">Sarah Johnson</span>
                         <a href="#">Web Design Media</a>
                     </article>
-                    <article>
+                    <article class="clearfix">
                         <img src="img/feedback2.png"/>
                         <p>I only have good things to say about Design Studios - I highly recommend them for promotional work...”</p>
                         <span class="name">Kate Saunders</span>
                         <a href="#">Software Solutions</a>
                     </article>
-                    <article>
+                    <article class="clearfix">
                         <img src="img/feedback3.png"/>
                         <p>“Design Studios have increased traffic to my site by over 200% in just a few months - great work guys!”</p>
                         <span class="name">Dave Cole</span>
                         <a href="#">Global Web Services</a>
                     </article>
                 </aside>
-                <section>
+                <section class="featured-project">
                         <h4>Featured Project</h4>
                         <article>
                             <h5>Yoshi Online Marketing Campaign</h5>
-                             <img class="youhi" src="img/youhi.png"/>
+                            <img class="youhi" src="img/youhi.png"/>
                             <p>This project involved organizing an online marketing campaign to help promote the Yoshi brand. The result of this campaign resulted in a 200% increase in Yoshi’s sales over a six month period of time. </p>
                             <a href="#">Click Here For More Details >></a>
                         </article>

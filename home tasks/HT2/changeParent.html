@@ -1,0 +1,53 @@
+<html>
+ <head>
+	  <meta charset="utf-8">
+	  <title>Пример веб-страницы</title>
+	  <style>
+	  	.wrapper1 {
+	  		width: 840px;
+	  		height: 100%;
+	  		background: blue;
+	  	}
+
+	  	.wrapper2 {
+	  		width: 640px;
+	  		height: 80%;
+	  		background: yellow;
+	  	}
+
+	  	.wrapper3 {
+	  		width: 540px;
+	  		height: 70%;
+	  		background: purple;
+	  	}
+
+	  	p {
+	  		width: 300px;
+	  		text-overflow: ellipsis;
+	  		white-space: nowrap;
+	  		overflow: hidden;
+	  	}
+
+	  </style>
+	   <script src="jquery-2.2.3.min.js"></script>
+	  <script>
+	  	function changeParent(el) {
+	  		$("a").parents("div.wrapper1").css("background", "red");
+	  	}
+	  </script>
+ </head>
+ <body>
+ 	<div class="wrapper1">
+ 		<div class="wrapper2">
+ 			<div class="wrapper3">
+				 <p>Sass Gem Version Inline docs
+					Sass makes CSS fun again. Sass is an extension of CSS, adding nested rules, variables, mixins, selector inheritance, and more. It’s translated to well-formatted, standard CSS using the command line tool or a web-framework plugin.
+					Sass has two syntaxes. The new main syntax (as of Sass 3) is known as “SCSS” (for “Sassy CSS”), and is a superset of CSS’s syntax. This means that every valid CSS stylesheet is valid SCSS as well. SCSS files use the extension .scss.
+					The second, older syntax is known as the indented syntax (or just “Sass”). Inspired by Haml’s terseness, it’s intended for people who prefer conciseness over similarity to CSS. Instead of brackets and semicolons, it uses the indentation of lines to specify blocks. Although no longer the primary syntax, the indented syntax will continue to be supported. Files in the indented syntax use the extension .sass.
+				</p>
+				<a href="#" onclick="changeParent(this)"> Read More... </a>
+			</div>
+		</div>
+	</div>
+ </body>
+</html>

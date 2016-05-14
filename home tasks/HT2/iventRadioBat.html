@@ -1,0 +1,34 @@
+<html>
+ <head>
+	  <meta charset="utf-8">
+	  <title>Пример веб-страницы</title>
+	   <script src="jquery-2.2.3.min.js"></script>
+	  
+ </head>
+ <body>
+ 	<form>
+ 		<p> First question</p>
+ 		<label>
+ 			<input type="radio" name="question-one" value="a">
+ 			A
+ 		</label>
+ 		<br>
+ 		<label>
+ 			<input type="radio" name="question-one" value="b">
+ 			B
+ 		</label>
+ 		<br>
+ 		<label>
+ 			<input type="radio" name="question-one" value="c">
+ 			C
+ 		</label>
+ 	</form>
+ 	<script>
+	  	$("[type=radio]").change(function(event) {
+	  		console.log(event);
+	  		alert("You have just made new chose!");
+	  	});
+	  
+	  </script>
+ </body>
+</html>

@@ -8,6 +8,11 @@ a {
     color: #00aeef;
 }
 
+p {
+    margin: 0;
+    line-height: 1.6em;
+}
+
 .main-header {
     background-color: #333333;
     height: 134px;
@@ -65,19 +70,19 @@ footer {
 
 .delimiter {
     border-bottom: 5px dotted #cccccc;
+    padding: 34px 0 42px 0;
 }
 
 .page-title {
-    margin-top: 54px;
-    margin-bottom: 19px;
+    margin-top: 63px;
+    padding-top: 0;
 }
 
     .page-title h1 {
         color: #333333;
         font-size: 3.750em;
         font-weight: bold;
-        margin-top: 13px;
-        margin-bottom: 11px;
+        margin: 0;
     }
 
     .page-title .blue {
@@ -87,33 +92,32 @@ footer {
     .page-title h2 {
         color: #bbbbbb;
         font-size: 3.125em;
-        margin-top: 6px;
-        margin-bottom: 14px;
         font-weight: normal;
+        margin: 0;
     }
 
 
     .foreword {
         font-size: 2.429em;
         color: #555555;
-        margin-top: 33px;
-        margin-bottom: 41px;
+        margin: 0;
     }
 
     .services {
         margin-top: 43px;
+        padding: 0 0 48px 0;
     }
         .services-item {
             width: 284px;
             height: 351px;
-            display: inline-block;
+            float: left;
             box-sizing: border-box;
             background-color: #00aeef;
             padding: 25px 25px 34px 25px;
-            margin-right: 50px;
-            margin-bottom: 48px;
+            margin: 0 54px 0 0;
             color: #ffffff;
             text-align: center;
+            box-shadow: 3px 4px 5px 0 rgba(170, 170, 170, 0.75);
         }
             .services article:last-child {
                 margin-right: 0;
@@ -136,52 +140,92 @@ footer {
                 height: 40px;
                 width: 232px;
                 border: none;
+                margin: 15px 0 15px 0;;
             }
 
-    .additional-info {
-        margin-top: 30px;
-    }
-
-        .additional-info aside,
-        .additional-info section {
+        .testimonials,
+        .featured-project {
             height: 385px;
             width: 476px;
             display: inline-table;
             color: #555555;
             padding: 5px 0 5px 0;
-            margin-bottom: 37px;
         }
-            .additional-info h4 {
+            .testimonials h4,
+            .featured-project h4 {
                 font-size: 1.714em;
                 font-weight: normal;
                 margin: 0 0 14px 0;
             }
 
+            .testimonials h4 {
+                margin-bottom: 30px;
+            }
+
+        .testimonials {
+            border-right: 4px dotted #cccccc;
+        }
+
+            .testimonials article {
+                margin-bottom: 35px;
+            }
+
+                .testimonials article:last-child {
+                    margin-bottom: 0;
+                }
+
             .name {
                 font-weight: bold;
             }
 
-            .additional-info aside {
-                border-right: 4px dotted #cccccc;
+            .testimonials img,
+            .testimonials p,
+            .name,
+            .testimonials a {
+                float: left;
+                width: 340px;
             }
 
-            .additional-info section {
+            .testimonials p {
+                 height: 54px;
+                line-height: 1.6em;
+            }
+
+            .testimonials img {
+                height: 84px;
+                width: 82px;
+                margin-right: 28px;
+            }
+
+            .featured-project {
                 padding-left: 46px;
                 box-sizing: border-box;
             }
 
+                .featured-project p {
+                    line-height: 1.6em;
+                }
+
                 .youhi {
                     height: 205px;
                     width: 430px;
+                    box-shadow: 3px 4px 5px 0 rgba(170, 170, 170, 0.75);
                 }
 
-                .additional-info section h5 {
+                .featured-project h5 {
                     font-size: 1.429em;
                     color: #888888;
                     font-weight: normal;
-                    margin: 9px 0 13px 0;
+                    margin: 9px 0 7px 0;
                 }
 
-                .additional-info section p {
-                    margin: 20px 0 15px 0;
+                .featured-project p {
+                    margin: 15px 0 10px 0;
                 }
+
+    footer {
+        font-size: 1.143em;
+        color: #888888;
+        margin-top: 18px;
+        margin-bottom: 18px;
+    }
